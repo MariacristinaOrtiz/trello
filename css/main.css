@@ -5,3 +5,114 @@
   margin: 0;
   padding: 0;
 }
+/*SETEAR NUESTROS ARCHIVOS: SEA IGUAL PARA TODOS LOS NAVEGADORES*/
+* {
+  box-sizing: border-box;
+  font-family:'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(0, 117, 222);
+}
+.container {
+  display: inline-block;
+  width: 33%;
+  padding: 3px;
+}
+.inline-block {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 0 2px;
+  background-color:rgb(103, 164, 198);
+  color: rgb(230, 230, 230);
+  font-size: 15px;
+  cursor: pointer;
+}
+.inline-block:hover {
+  background-color: rgb(103, 150, 200);
+}
+a {
+  text-decoration: none;
+}
+
+header nav.menu-one {
+  background-color: rgb(47, 117, 170);
+}
+header nav.menu-one div.inline-block a {
+  color: #fff;
+  font-weight: 600;
+  display: block;
+}
+header nav.menu-one div.inline-block a .fa-trello {
+  padding-right: 8px;
+}
+header nav.menu-one div.container form {
+width: 39%;
+}
+header nav.menu-one div.container form input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 85%;
+}
+header nav.menu-one div.logo-trello {
+  text-align: center;
+}
+header nav.menu-one div.logo-trello a {
+    color: rgb(103, 164, 198);
+    font-size: 25px;
+    font-family: 'Lobster', cursive ;
+    font-style: oblique;
+}
+header nav.menu-one div.logo-trello a:hover {
+  color: rgb(235, 235, 235);
+}
+header nav.menu-one div.list-menu {
+  text-align: right;
+}
+header nav.menu-one div.list-menu ul li.user {
+  border-radius: 100%;
+  background-color: rgb(180, 180, 180);
+  padding: 9px 5px;
+  color:black;
+}
+header nav.menu-two div.container ul li.li-first-item {
+  font-size: 19px;
+  font-style: oblique;
+  font-weight: 550;
+}
+header nav.menu-two div.container ul li.inline-block {
+  background-color: transparent;
+}
+header nav.menu-two div.container ul li.inline-block:hover {
+  background-color: rgb(47, 117, 170);
+}
+header nav.menu-two div.container ul li.inline-block .fa-lock {
+  padding-right: 7px;
+}
+header nav.menu-two div.show-menu {
+  position: relative;
+  left: 520px;
+  text-align: right;
+  color: rgb(230, 230, 230);
+  font-size: 14px;
+}
+header nav.menu-two div.show-menu span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+header nav.menu-two div.show-menu span:hover {
+color:  rgb(200, 200, 200);
+border-bottom: 1px solid rgb(200, 200, 200);
+}
+section .container {
+  color: rgb(230, 230, 230);
+  margin-left: 10px;
+  width: 15%;
+  padding: 10px;
+  background-color: rgb(47, 117, 170);
+  font-size: 14px;
+}
+/*clases para los eventos*/
