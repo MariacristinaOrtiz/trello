@@ -4,10 +4,12 @@
   font-family:'Roboto', sans-serif;
   margin: 0;
   padding: 0;
- }
+}
+/* ESTILOS AL BODY*/
 body {
   background-color: rgb(0, 117, 222);
 }
+/* ETIQUETAS REUTILIZABLES*/
 .container {
   display: inline-block;
   width: 33%;
@@ -29,7 +31,8 @@ body {
 a {
   text-decoration: none;
 }
-
+/* ESTILOS AL ENCABEZADO*/
+/* ESTILOS A LA BARRA DE NAVEGACIÓN UNO*/
 header nav.menu-one {
   background-color: rgb(47, 117, 170);
 }
@@ -42,7 +45,7 @@ header nav.menu-one div.inline-block a .fa-trello {
   padding-right: 8px;
 }
 header nav.menu-one div.container form {
-width: 39%;
+  width: 39%;
 }
 header nav.menu-one div.container form input {
   border: none;
@@ -54,10 +57,10 @@ header nav.menu-one div.logo-trello {
   text-align: center;
 }
 header nav.menu-one div.logo-trello a {
-    color: rgb(103, 164, 198);
-    font-size: 25px;
-    font-family: 'Lobster', cursive ;
-    font-style: oblique;
+  color: rgb(103, 164, 198);
+  font-size: 25px;
+  font-family: 'Lobster', cursive ;
+  font-style: oblique;
 }
 header nav.menu-one div.logo-trello a:hover {
   color: rgb(235, 235, 235);
@@ -71,6 +74,7 @@ header nav.menu-one div.list-menu ul li.user {
   padding: 9px 5px;
   color:black;
 }
+/* ESTILOS A LA BARRA DE NAVEGACIÓN UNO*/
 header nav.menu-two div.container ul li.li-first-item {
   font-size: 19px;
   font-style: oblique;
@@ -97,8 +101,8 @@ header nav.menu-two div.show-menu span {
   cursor: pointer;
 }
 header nav.menu-two div.show-menu span:hover {
-color:  rgb(200, 200, 200);
-border-bottom: 1px solid rgb(200, 200, 200);
+  color:  rgb(200, 200, 200);
+  border-bottom: 1px solid rgb(200, 200, 200);
 }
 section .container {
   color: rgb(230, 230, 230);
@@ -111,17 +115,19 @@ section .container {
 section div.insert-list {
   cursor: pointer;
 }
-/*clases para los eventos*/
+/* CLASES PARA LOS ELEMENTOS CREADOS EN LOS EVENTOS JS*/
+/* Estilos al formulario creado en js que contiene el input:"Añadir lista" y  al div que se muestra después de darle click a "guardar" en el formulario*/
 .new-form, .new-box {
- background-color: rgb(225, 225, 225);
- border-radius: 3px;
- padding: 5px;
- width: 17%;
- position: relative;
- display: inline-block;
- left: 10px;
+  background-color: rgb(225, 225, 225);
+  border-radius: 3px;
+  padding: 5px;
+  width: 17%;
+  position: relative;
+  display: inline-block;
+  left: 10px;
 
 }
+/* Estilos al input "Añadir lista"  que esta en el formulario creado por js*/
 .new-input {
   width: 100%;
   padding: 7.5px 5px;
@@ -133,20 +139,22 @@ section div.insert-list {
   color:rgb(60, 60, 60);
   background-color: rgb(210, 210, 210);
 }
+/* Estilos al button "Guardar"  que esta en el formulario creado por js*/
 .new-button {
- outline: none;
- background-color: rgb(0, 186, 75);
- padding: 7px 18px;
- border-radius: 5px;
- color: #fff;
- border: none;
- font-weight: 600;
- font-size: 14px;
- cursor: pointer;
+  outline: none;
+  background-color: rgb(0, 186, 75);
+  padding: 7px 18px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
 }
 .new-button:hover {
   background-color: rgb(0, 147, 44);
 }
+/* Estilos al ícono "X"  que esta en el formulario creado por js*/
 .fa-times {
   color: rgb(180, 180, 180);
   font-size: 20px;
@@ -156,16 +164,19 @@ section div.insert-list {
 .fa-times:hover {
   color: gray;
 }
+/* Estilos al al div que se muestra después de darle click a "guardar" en el formulario*/
 .new-box {
   float: left;
   margin-right: 10px;
   padding: 0;
 }
+/* Estilos al div que esta dentro del div.new-box que contiene el nombre de las listas creadas*/
 .name-list {
   font-size: 14px;
   font-weight: 600;
   padding: 9px;
 }
+/* Estilos al div que esta dentro del div.new-box que contiene el texto "añadir tajetas"*/
 .insert-target {
   font-size: 14px;
   color: rgb(150, 150, 150);
@@ -177,28 +188,31 @@ section div.insert-list {
   background-color: rgb(210, 210, 210);
   color: rgb(120, 120, 120);
 }
+/* Estilos al div(aparece despues de hacerle click a "añadir tarjetas") que contiene al textarea"*/
 .new-div-textarea {
   margin-left: 8px;
   margin-bottom: 7px;
 }
+/* Estilos al textarea que esta dentro del div que aparece despues de hacerle click a "añadir tarjetas"*/
 .new-textarea {
- width: 97.5%;
- height:70px;
- border-radius: 4px;
- border: none;
- outline: none;
- margin-bottom: 3px;
- padding: 5px;
- font-size: 14px;
+  width: 97.5%;
+  height:70px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin-bottom: 3px;
+  padding: 5px;
+  font-size: 14px;
 }
+/* Estilos al div que contiene todas las listas creadas en el textarea*/
 .new-insert-target {
   background-color: #fff;
- width: 94%;
- padding: 7px;
- margin-left: 8px;
- border-radius: 4px;
- margin-bottom: 7px;
- cursor: pointer;
+  width: 94%;
+  padding: 7px;
+  margin-left: 8px;
+  border-radius: 4px;
+  margin-bottom: 7px;
+  cursor: pointer;
 }
 .new-insert-target:hover {
   background-color:  rgb(240, 240, 240);
