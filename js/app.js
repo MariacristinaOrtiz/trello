@@ -5,7 +5,7 @@ window.addEventListener('load', function(event) {
   newForm.classList.add('new-form');
   var newInput = document.createElement('input');
   newInput.classList.add('new-input');
-  newInput.setAttribute('placeholder', 'Añadir lista...');
+  newInput.setAttribute('placeholder', 'Añadir una lista...');
   var newDiv = document.createElement('div');
   newDiv.innerHTML = '<button class="new-button">Guardar</button>' + '<i class="fa fa-times" aria-hidden="true"></i>';
   var sectionFather = document.getElementById('section-father');
@@ -26,7 +26,8 @@ window.addEventListener('load', function(event) {
         var newBox = document.createElement('div');
         newBox.classList.add('new-box');
         var nameList = document.createElement('div');
-        nameList.innerHTML = newInput.value + '<span id="fa-ellipsis"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></span>';
+        nameList.classList.add('name-list');
+        nameList.innerHTML = newInput.value;
         var insertTarget = document.createElement('div');
         insertTarget.classList.add('insert-target');
         insertTarget.textContent = 'Añadir una tarjeta...';
@@ -38,8 +39,9 @@ window.addEventListener('load', function(event) {
       insertTarget.addEventListener('click', insertTextarea);
       function insertTextarea() {
         var newDivTextarea = document.createElement('div');
+        newDivTextarea.classList.add('new-div-textarea');
         var newTextarea = document.createElement('textarea');
-        newInput.classList.add('new-textarea');
+        newTextarea.classList.add('new-textarea');
         var newDivButton = document.createElement('div');
         newDivButton.innerHTML = '<button class="new-button">Añadir</button>' + '<i class="fa fa-times" aria-hidden="true"></i>';
         newDivTextarea.appendChild(newTextarea);
