@@ -51,4 +51,4 @@ Se muestra una replica del **Tablero** de la página web **Trello**. Para resolv
 
 ## Ejemplo usada para el replicado
 
-![twitter Website]()
+![twitter Website](https://github.com/MariacristinaOrtiz/trello/blob/master/assets/docs/trello.gif)
